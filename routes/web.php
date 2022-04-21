@@ -22,5 +22,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-route::get('product.register',[productcontroller::class,'register']);
+route::get('/product/register',[productcontroller::class,'register']);
+route::post('/product/register',[productcontroller::class,'store']);
  
