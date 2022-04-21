@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('unit')->nullable();
             $table->double('price',8,2)->nullable();
             $table->integer('quantity')->nullable();
-            $table->timestamps();
+            $table->timestamp('created_at')->nullable();
         }); 
     }
 
